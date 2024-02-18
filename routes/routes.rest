@@ -1,0 +1,30 @@
+### create a user
+
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "username": "Abdelkarim Aoulallay"
+}
+
+### get all users
+
+GET http://localhost:3000/api/users
+Content-Type: application/json
+
+### create exercise
+
+POST http://localhost:3000/api/users/65d2521a9442bbbc97ef2066/exercises
+Content-Type: application/json
+
+{
+    ":_id": "65d2521a9442bbbc97ef2066",
+    "description": "jogging exercise",
+    "duration": 5,
+    "date": "2020-10-11"
+}
+
+### get all user exercises
+
+GET http://localhost:3000/api/users/65d2521a9442bbbc97ef2066/logs
+
